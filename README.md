@@ -63,7 +63,9 @@ HTML, CSS, SCSS, Javascript, jQuery, Ajax
 ### データベース
 MySQL, SequelPro
 ### インフラ
-AWS(EC2,S3), Capistrano, Docker(開発環境)
+AWS(EC2,S3), Docker(開発環境), CircleCI, Capistrano<br>
+Nginx、Rails、MySQLコンテナを用意して、docker-composeで起動。<br>
+CircleCIを用いてdocker-composeでコンテナを構築しCapistranoにより自動デプロイ。
 ### Webサーバー(本番環境)
 nginx
 ### アプリケーションサーバ(本番環境)
