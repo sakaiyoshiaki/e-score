@@ -45,7 +45,7 @@ http:/ <br>
 ・投稿機能<br>
 ー画像投稿(refile)<br>
 ー記事の画像プレビュー<br>
-ー記事投稿(summernote)<br>
+ー記事投稿(Action Text)<br>
 ・お気に入り登録機能(Ajax)<br>
 ・ランキング表示機能(評価ポイントの累計が上位10位以内の企業)<br>
 ・フォロー機能(Ajax)<br>
