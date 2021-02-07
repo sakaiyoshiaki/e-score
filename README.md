@@ -69,6 +69,7 @@
 | title    | string     | null: false                   |
 | text     | text       | null: false                   |
 | image_id | string     | null: false                   |
+| genre_id | integer    | null: false                   |
 | company  | references | null: false, foreign_key:true |
 
 - belongs_to :company
