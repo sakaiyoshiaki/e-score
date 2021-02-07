@@ -13,9 +13,9 @@
 | last_name_kana     | string  | null: false              |
 | first_name_kana    | string  | null: false              |
 | birthday           | date    | null: false              |
-| postal_code        | string  | null: false              |
-| address            | string  | null: false              |
-| phone_number       | string  | null: false              |
+| postal_code        | string  |                          |
+| address            | string  |                          |
+| phone_number       | string  |                          |
 | profile_image_id   | string  |                          |
 | is_active          | boolean | true                     |
 
@@ -25,18 +25,19 @@
 - has_many :active_relationships, class_name: "Relationship", foreign_key: :following_id, dependent: :destroy
 - has_many :followings, through: :active_relationships, source: :follower, dependent: :destroy
 ## companiesテーブル
-| Column             | Type    | Options                  |
-| ------------------ | ------- | ------------------------ |
-| email              | string  | null: false, unique:true |
-| encrypted_password | string  | null: false              |
-| company_name       | string  | null: false              |
-| company_name_kana  | string  | null: false              |
-| postal_code        | string  | null: false              |
-| address            | string  | null: false              |
-| phone_number       | string  | null: false              |
-| profile_image_id   | string  |                          |
-| approved           | boolean | true                     |
-| is_active          | boolean | true                     |
+| Column              | Type    | Options                  |
+| ------------------- | ------- | ------------------------ |
+| email               | string  | null: false, unique:true |
+| encrypted_password  | string  | null: false              |
+| company_name        | string  | null: false              |
+| company_name_kana   | string  | null: false              |
+| postal_code         | string  | null: false              |
+| address             | string  | null: false              |
+| phone_number        | string  | null: false              |
+| profile_image_id    | string  |                          |
+| background_image_id | string  |                          |
+| approved            | boolean | true                     |
+| is_active           | boolean | true                     |
 
 - has_many :rooms, dependent: :destroy
 - has_many :messages, dependent: :destroy
