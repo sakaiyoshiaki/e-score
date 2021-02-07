@@ -1,6 +1,6 @@
 # README
 ## ER図
-![table2](https://user-images.githubusercontent.com/67823080/107048197-03591c80-680c-11eb-9cb1-71183b7f8028.png)
+![table3](https://user-images.githubusercontent.com/67823080/107134505-05b79580-6936-11eb-89d5-3d9db243405a.png)
 ## DB設計
 ## usersテーブル
 | Column             | Type    | Options                  |
