@@ -13,21 +13,26 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: root
-  password:
+  # username: root
+  username: <%= ENV.fetch("MYSQL_USERNAME", "root") %>
+  # password: password
+  password: <%= ENV.fetch("MYSQL_PASSWORD", "") %>
   # host: db
+  host: <%= ENV.fetch("MYSQL_HOST", "localhost") %>
   socket: /tmp/mysql.sock
 
 development:
   <<: *default
   database: e_score_development
+  # database: e-score_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: e_score_test
+  # database: e_score_test
+  database: e-score_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -50,6 +55,8 @@ test:
 #
 production:
   <<: *default
-  database: e_score_production
-  username: e_score
+  # database: e_score_production
+  database: e-score_production
+  # username: e_score
+  username: e-score
   password: <%= ENV['E_SCORE_DATABASE_PASSWORD'] %>
