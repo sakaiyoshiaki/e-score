@@ -16,8 +16,8 @@
         <ul class="navbar-nav mr-auto">
           <li class="nav-item"><i class="far fa-newspaper"></i><%= link_to '記事一覧', "#" %></li>
           <li class="nav-item"><i class="fas fa-user-tie"></i><%= link_to '専門家', "#" %></li>
-          <li class="nav-item"><i class="fas fa-user-plus"></i><%= link_to '新規登録', "#" %></li>
-          <li class="nav-item"><i class="fas fa-sign-in-alt"></i><%= link_to 'ログイン', "#" %></li>
+          <li class="nav-item"><i class="fas fa-user-plus"></i><%= link_to '新規登録', new_user_registration_path %></li>
+          <li class="nav-item"><i class="fas fa-sign-in-alt"></i><%= link_to 'ログイン', new_user_session_path %></li>
         </ul>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"><i class="fas fa-building"></i><%= link_to '(法人)新規登録申請', "#" %></li>
