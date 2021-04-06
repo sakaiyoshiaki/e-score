@@ -1,14 +1,16 @@
 Rails.application.routes.draw do
-  devise_for :users, :controllers => {
-    :registrations => 'users/registrations',
-    :sessions => 'users/sessions'
+  devise_for :companies, controllers: {
+    sessions: 'companies/sessions',
+    passwords: 'companies/passwords',
+    registrations: 'companies/registrations'
   }
-
-  devise_scope :user do
-    get "sign_in", :to => "users/sessions#new"
-    get "sign_out", :to => "users/sessions#destroy"
-  end
+  devise_for :users, controllers: {
+    sessions: 'users/sessions',
+    passwords: 'users/passwords',
+    registrations: 'users/registrations'
+  }
   root to: "home#index"
   resources :users
+  resources :companies
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
