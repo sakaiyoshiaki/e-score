@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   devise_for :admins, controllers: {
     sessions: 'admins/sessions'
@@ -12,7 +14,7 @@ Rails.application.routes.draw do
     passwords: 'users/passwords',
     registrations: 'users/registrations'
   }
-  root to: "home#index"
+  root to: 'home#index'
   resources :users
   resources :companies
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
