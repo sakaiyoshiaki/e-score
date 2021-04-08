@@ -1,3 +1,44 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// ここからトップページ
+.top-summary{ //
+  margin-top: 50px;
+  margin-bottom: 120px;
+}
+
+.background { //
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(90deg,#d8e9f2, #ffffff);
+  margin-bottom: 45px;
+}
+
+.under{
+  border-bottom: solid 2px #17a2b8;
+}
+
+.iphone{
+  width: 100%;
+}
+
+.top-registration-btn{
+  color: #fff;
+  background-image: linear-gradient(260deg, #00c4c4, #0d93e0);
+  border-radius: 50px;
+  width: 240px;
+  margin: 40px 0 20px 0;
+}
+
+.top-message{ //
+  margin-top: 50px;
+}
+
+.about-hareyaka{
+  width: 100%;
+  margin: 20px 0 100px 0;
+}
+
+.top-registraion{
+  padding: 60px;
+  background-color: #f5f8fa;
+  border-radius: 15px;
+}
+// ここまでトップページ

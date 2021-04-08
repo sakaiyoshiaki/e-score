@@ -1,0 +1,63 @@
+// ここからヘッダー
+header{
+  margin-bottom: 80px;
+}
+
+.header-nav{
+  color:#128da0;
+  background-color: #fefefe;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-top: 5px #128da0 solid;
+  border-bottom: 1px #d9d9d9 solid;
+
+  .nav-item{
+    a{
+      color: #128da0;
+      text-decoration: none;
+      margin: 0 25px 0 5px;
+    }
+  }
+  .login-person{
+    color: #787e81;
+    text-decoration: none;
+  }
+}
+
+.nav-tabs{
+  margin-bottom: 35px;
+}
+
+/* 検索ボックス */
+dl.searchbox{
+  width: 220px;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  margin: 0;
+}
+dl.searchbox dt{
+  padding: 3px;
+}
+dl.searchbox dt input{
+  width: 100%;
+  height: 30px;
+  background: none;
+  border: none;
+}
+dl.searchbox dd{
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+.search-btn{
+  display: block;
+  float: right;
+  background: #fff;
+  width: 40px;
+  height: 28px;
+  line-height: 28px;
+  border: none;
+}
+// ここまでヘッダー
