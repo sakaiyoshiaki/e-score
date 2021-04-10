@@ -33,6 +33,12 @@ header{
     border-color: rgba(0,0,0,0);
 }
 
+.navbar-brand{
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+  font-size: 25px;
+}
+
 /* 検索ボックス */
 // dl.searchbox{
 //   width: 220px;
