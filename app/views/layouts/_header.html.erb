@@ -1,12 +1,9 @@
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top header-nav shadow-sm">
-    <%#= link_to root_path, class: "navbar-brand" do %>
-      <%#= image_tag 'logo.png', style: "width: 120px;" %>
-      <%# ↑タイトルロゴの画像を貼り付ける %>
-    <%# end %>
-    <a class="navbar-brand text-info" href="/">E.Score</a>
-　　<%# 1000px以下の時に表示されるハンバーガーメニュー %>
-    <button class="navbar-toggler" type="button"
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top header-nav shadow-sm"> <%#= ヘッダー大枠 %>
+
+    <a class="navbar-brand text-info" href="/">E.Score</a> <%#= 左端のタイトルリンク %>
+
+    <button class="navbar-toggler" type="button"  <%# 1000px以下でハンバーガーメニュー表示(右端のボタン) %>
         data-toggle="collapse"
         data-target="#navmenu1"
         aria-controls="navmenu1"
@@ -15,15 +12,14 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <%# ログインしていない場合 %>
-      <div class="collapse navbar-collapse" id="navmenu1">
-        <ul class="navbar-nav mr-auto">
+      <div class="collapse navbar-collapse" id="navmenu1"> <%#= ナビゲーション大枠 %>
+        <ul class="navbar-nav mr-auto"> <%#= 左端のナビゲーション %>
           <li class="nav-item"><i class="far fa-newspaper"></i><%= link_to '記事一覧', "#" %></li>
           <li class="nav-item"><i class="fas fa-user-tie"></i><%= link_to '専門家', "#" %></li>
           <li class="nav-item"><i class="fas fa-user-plus"></i><%= link_to '新規登録', new_user_registration_path %></li>
           <li class="nav-item"><i class="fas fa-sign-in-alt"></i><%= link_to 'ログイン', new_user_session_path %></li>
         </ul>
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto"> <%#= 右端のナビゲーション %>
           <li class="nav-item"><i class="fas fa-building"></i><%= link_to '(法人)新規登録申請', new_company_registration_path %></li>
           <li class="nav-item"><i class="far fa-building"></i><%= link_to '(法人)ログイン', new_company_session_path %></li>
         </ul>
