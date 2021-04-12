@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>EScore</title>
+    <title>E.Score</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -14,17 +14,7 @@
     <%# ヘッダー %>
     <%= render 'layouts/header' %>
     <%# body %>
-    <div class="body">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <p id="notice"><%= notice %></p>
-          </div>
-        </div>
-      </div>
       <%= yield %>
-    </div>
-
     <%# フッター %>
     <%= render 'layouts/footer' %>
     </div>

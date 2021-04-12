@@ -12,18 +12,18 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-      <div class="collapse navbar-collapse" id="navmenu1"> <%#= ナビゲーション大枠 %>
-        <ul class="navbar-nav mr-auto"> <%#= 左端のナビゲーション %>
-          <li class="nav-item"><i class="far fa-newspaper"></i><%= link_to '記事一覧', "#" %></li>
-          <li class="nav-item"><i class="fas fa-user-tie"></i><%= link_to '専門家', "#" %></li>
-          <li class="nav-item"><i class="fas fa-user-plus"></i><%= link_to '新規登録', new_user_registration_path %></li>
-          <li class="nav-item"><i class="fas fa-sign-in-alt"></i><%= link_to 'ログイン', new_user_session_path %></li>
-        </ul>
-        <ul class="navbar-nav ml-auto"> <%#= 右端のナビゲーション %>
-          <li class="nav-item"><i class="fas fa-building"></i><%= link_to '(法人)新規登録申請', new_company_registration_path %></li>
-          <li class="nav-item"><i class="far fa-building"></i><%= link_to '(法人)ログイン', new_company_session_path %></li>
-        </ul>
-      </div>
+    <div class="collapse navbar-collapse" id="navmenu1"> <%#= ナビゲーション大枠 %>
+      <ul class="navbar-nav mr-auto"> <%#= 左端のナビゲーション %><%#= 後でアイコン追加 %>
+        <li class="nav-item"><i class="far fa-newspaper"></i><%= link_to '記事一覧', "#" %></li>
+        <li class="nav-item"><i class="fas fa-user-tie"></i><%= link_to '専門家', "#" %></li>
+        <li class="nav-item"><i class="fas fa-user-plus"></i><%= link_to '新規登録', new_user_registration_path %></li>
+        <li class="nav-item"><i class="fas fa-sign-in-alt"></i><%= link_to 'ログイン', new_user_session_path %></li>
+      </ul>
+      <ul class="navbar-nav ml-auto"> <%#= 右端のナビゲーション %>
+        <li class="nav-item"><i class="fas fa-building"></i><%= link_to '(法人)新規登録申請', new_company_registration_path %></li>
+        <li class="nav-item"><i class="far fa-building"></i><%= link_to '(法人)ログイン', new_company_session_path %></li>
+      </ul>
+    </div>
 
   </nav>
 </header>
